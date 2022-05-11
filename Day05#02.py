@@ -10,8 +10,6 @@ import re
 
 # 當n是0和1時就回傳1
 # 不是這兩個數時進行遞迴計算，也就是把前兩個數加起來再回傳
-
-
 def climb(n):
     if n == 0:
         return 1
@@ -20,7 +18,6 @@ def climb(n):
 
     sum = climb(n-1)+climb(n-2)
     return sum
-
 
 n = input("輸入:")
 result = climb(int(n))
