@@ -8,17 +8,17 @@ import numpy as np
 import codecs
 import re
 
-strss='Here are UPPERCASE and lowercase chars'
-finish_result={}
-x=1
+strss = 'Here are UPPERCASE and lowercase chars'
+finish_result = {}
+x = 1
 
-#========== 計算每個字母出現位置 start==========
+# ========== 計算每個字母出現位置 start==========
 for i in strss:
-    if i in finish_result: 
-        finish_result[i]+=','+str(x)
+    if i in finish_result:
+        finish_result[i] += ','+str(x)
     else:
-        finish_result[i]=str(x)
-    x+=1
-#========== 計算每個字母出現位置 end===========
+        finish_result[i] = str(x)
+    x += 1
+# ========== 計算每個字母出現位置 end===========
 
 print(finish_result)
